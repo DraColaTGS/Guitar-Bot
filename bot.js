@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("اكتب اي شي",{type: 'WATCHING'})
+   client.user.setActivity("&help | &invite",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -37,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "البرفكس" 
+var prefix = "&" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -267,13 +267,41 @@ ${prefix}vol ⇏ لتغيير درجة الصوت 100 - 0
 ${prefix}leave⇏ لإخرآج البوت من الروم
 ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
+${prefix}invite ⇏ لدعوه البوت الي سرفرك
  `)
    message.channel.sendEmbed(embed)
    
    }
    });
  
+client.on('message', message => {
+  if (true) {
+if (message.content === '.invite') {
+      message.author.send('  رابط بوتك  |  تفضل ربط البوت     ').catch(e => console.log(e.stack));
+ 
+    }
+   }
+  });
+ 
+ 
+
+
+
+
+    client.on('message', message => {
+
+const prefix = "&";  
+
+if (true) {
+if (message.content === '.invite') {
+      message.author.send('https://discordapp.com/oauth2/authorize?client_id=574366742915186709&permissions=2080374975&scope=bot
+ ').catch(e => console.log(e.stack));
+ 
+    }
+   }
+  });
  
  
  
+
 client.login(process.env.BOT_TOKEN);
