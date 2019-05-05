@@ -297,7 +297,7 @@ client.on("message", message => {
       .setColor("#000000")
       .setDescription(`
 
-             *** Music Orders ***
+             ***___Music Orders___***
 
 ♦♦♦___________________♦_____________________♦♦♦
 
