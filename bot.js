@@ -25,6 +25,14 @@ client.on('message', message => {
     }
 });
 
+
+client.on('guildCreate', guild => {
+    var embed = new Discord.RichEmbed()
+    .setColor(0x5500ff)
+    .setDescription(`**شكرا لك لي اضافتي لي سرفرك**`)
+        guild.owner.send(embed)
+  });
+
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
