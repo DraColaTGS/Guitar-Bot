@@ -26,6 +26,30 @@ client.on('message', message => {
 });
 
 
+client.on('message', message => {
+  if (true) {
+if (message.content === '&Support') {
+      message.author.send('https://discord.gg/53HQUBb').catch(e => console.log(e.stack));
+ 
+    }
+   }
+  });
+ 
+ 
+client.on('message', message => {
+     if (message.content === "&Support") {
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#9B59B6")
+  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
+     
+     
+     
+  message.channel.sendEmbed(embed);
+    }
+});
+
+
 client.on('guildCreate', guild => {
     var embed = new Discord.RichEmbed()
     .setColor(0x5500ff)
@@ -301,6 +325,7 @@ ${prefix}leave⇏ لإخرآج البوت من الروم
 ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 ${prefix}invite ⇏ لدعوه البوت الي سرفرك
+${prefix}Support ⇏ لي دخول سيرفر الدعم الفني
  `)
    message.channel.sendEmbed(embed)
    
