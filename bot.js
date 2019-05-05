@@ -1,5 +1,30 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
+
+client.on('message', message => {
+  if (true) {
+if (message.content === '.invite') {
+      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=574366742915186709&permissions=8&scope=bot').catch(e => console.log(e.stack));
+ 
+    }
+   }
+  });
+ 
+ 
+client.on('message', message => {
+     if (message.content === ".invite") {
+     let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#9B59B6")
+  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
+     
+     
+     
+  message.channel.sendEmbed(embed);
+    }
+});
+
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
