@@ -323,7 +323,7 @@ client.on("message", message => {
 **${prefix}Support ⇏ لي دخول سيرفر الدعم الفني**
 
 **رمضان يجمعنا | كل عام وانتم بخير**
-
+♦♦♦___________________♦___________________♦♦♦
  `)
    message.channel.sendEmbed(embed)
    
