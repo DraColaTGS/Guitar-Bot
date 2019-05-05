@@ -296,6 +296,9 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
+
+         ***__Music orders__***
+**
 ${prefix}play ⇏ لتشغيل أغنية برآبط أو بأسم
 ${prefix}skip ⇏ لتجآوز الأغنية الحآلية
 ${prefix}stop ⇏ إيقآف الأغنية مؤقتا
@@ -306,6 +309,7 @@ ${prefix}np ⇏ لمعرفة الأغنية المشغلة حآليا
 ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
 ${prefix}invite ⇏ لدعوه البوت الي سرفرك
 ${prefix}Support ⇏ لي دخول سيرفر الدعم الفني
+**
  `)
    message.channel.sendEmbed(embed)
    
