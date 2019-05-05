@@ -29,7 +29,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '&Support') {
-      message.author.send('https://discord.gg/53HQUBb').catch(e => console.log(e.stack));
+      message.author.send('https://discord.gg/UBgtCct').catch(e => console.log(e.stack));
  
     }
    }
