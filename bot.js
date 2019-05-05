@@ -320,7 +320,7 @@ client.on("message", message => {
 
 ♦♦♦___________________ ♫ ♪ ♬ _______________________♦♦♦  
                       
-                *** Help Support ***
+                ***___Help Support___***
 
 
 **${prefix}invite ⇏ لدعوه البوت الي سرفرك**
