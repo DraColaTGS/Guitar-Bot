@@ -13,7 +13,7 @@ if (message.content === '&invite') {
  
  
 client.on('message', message => {
-     if (message.content === "&invite") {
+     if (message.content === "&inv") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
@@ -59,9 +59,17 @@ client.on('guildCreate', guild => {
 
  
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame(` &help | &invite   `,'https://www.twitch.tv/zya2d_')
-    client.user.setStatus('ldle');
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : i1Suhaib`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(` ON ${client.guilds.size} Servers - &help,%inv`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+});
+client.on("guildCreate", guild => {
+  console.log(` Join Bot Of Server ${guild.name} Owner Of Server ${guild.owner.user.username}!`)
 });
  
 const ytdl = require("ytdl-core");
