@@ -331,7 +331,7 @@ client.on("message", message => {
                 ***___☟ Help Support ☟___***
 
 
-**${prefix}invite ✍  لدعوه البوت الي سرفرك**
+**${prefix}inv ✍  لدعوه البوت الي سرفرك**
 
 **${prefix}Support ✍  لي دخول سيرفر الدعم الفني**
 
