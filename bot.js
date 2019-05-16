@@ -1,6 +1,19 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : i1Suhaib`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(` ON ${client.guilds.size} Servers - &help`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
+});
+client.on("guildCreate", guild => {
+  console.log(` Join Bot Of Server ${guild.name} Owner Of Server ${guild.owner.user.username}!`)
+});
 
 client.on('message', message => {
   if (true) {
